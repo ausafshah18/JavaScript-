@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter username and password</label>
+        <br>
+        <input type="text" id="fname" placeholder="Enter in lowercase" onblur="Uppercase()">
+        <br>
+        <input type="text" id="lname" placeholder="ENter in uppercase" onblur="Lowercase()">
+    </form>
+</body>
+<script>
+    function Uppercase()
+    {
+        var x = document.getElementById("fname")
+        x.value = x.value.toUpperCase()
+    }
+    function Lowercase()
+    {
+        var x = document.getElementById("lname")
+        x.value = x.value.toLowerCase()
+    }
+</script>
+</html>
